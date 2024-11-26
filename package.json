@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "portfolio",
+  "keywords": [
+    "portfolio",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "bun",
+    "webpack",
+    "zigzap",
+    "zap",
+    "zig"
+  ],
+  "author": "xArcGit",
+  "license": "XAG",
+  "private": true
+}

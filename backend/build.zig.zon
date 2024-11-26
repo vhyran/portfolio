@@ -1,0 +1,21 @@
+.{
+    .name = "backend",
+    .target = "build.zig",
+    .version = "0.1.0",
+    .minimum_zig_version = "0.11.0",
+    .dependencies = .{
+        .zap = .{
+            .url = "git+https://github.com/zigzap/zap?ref=v0.9.1#ae5c9278335d8e1133cd6d22707323dda712e120",
+            .hash = "12200223d76ab6cd32f75bc2e31463b0b429bb5b2b6fa4ce8f68dea494ca1ec3398b",
+        },
+        .zqlite = .{
+            .url = "git+https://github.com/karlseguin/zqlite.zig?ref=master#8342a8b6de014aeee673fb93060538b155f4d6cd",
+            .hash = "122077a4e67db2b4b11217a2fa073cd75d1f58d9fcbe275630a59dfc6839bb4454ac",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
