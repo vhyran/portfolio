@@ -1,34 +1,29 @@
-import { useState } from 'react';
+import Navbar from './components/Navbar';
 
-function App() {
-	const [count, setCount] = useState(0);
-
+function Main() {
 	return (
-		<div className="min-h-screen bg-base text-text flex flex-col justify-center items-center">
-			<main className="text-center px-4">
-				<h1 className="text-5xl font-extrabold text-pink mb-8 animate__animated animate__fadeIn">
-					Welcome to Vite + React!
-				</h1>
-				<p className="text-xl text-text mb-12 animate__animated animate__fadeIn">
-					Build fast and modern web applications with Vite and React.
+		<>
+			<Navbar />
+			<div className="text-text fake-content p-6 pt-20">
+				<h1 className="text-2xl font-bold mb-4">Welcome to the Page</h1>
+				<p className="mb-4 ">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et arcu
+					vitae turpis malesuada elementum. Praesent auctor, nulla vel dictum
+					ultricies, nisi magna sollicitudin purus, sed sagittis eros magna nec
+					augue. Proin vehicula libero nec metus efficitur, at dignissim velit
+					sollicitudin.
 				</p>
-				<div className="card p-8 bg-surface0 rounded-lg shadow-xl transition-transform transform hover:scale-105">
-					<button
-						type="button"
-						className="bg-surface1 text-white px-6 py-3 rounded-full hover:bg-surface2 transition-all duration-300 ease-in-out"
-						onClick={() => setCount(count => count + 1)}
-					>
-						Count: {count}
-					</button>
-					<p className="mt-4 text-subtext1">
-						Edit{' '}
-						<code className="bg-surface1 px-2 py-1 rounded">src/App.tsx</code>{' '}
-						and save to test Hot Module Replacement (HMR).
-					</p>
-				</div>
-			</main>
-		</div>
+				{[...Array(200)].map((_, index) => {
+					const uniqueKey = `item-${index}-${Math.random().toString(36).substr(2, 9)}`;
+					return (
+						<p key={uniqueKey} className="mb-4">
+							This is some placeholder content for scrolling. Item {index + 1}.
+						</p>
+					);
+				})}
+			</div>
+		</>
 	);
 }
 
-export default App;
+export default Main;

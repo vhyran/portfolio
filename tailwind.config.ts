@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				jetbrains: ['JetBrains Mono', 'monospace'],
+			},
+		},
 	},
 	plugins: [
 		require('@catppuccin/tailwindcss')({
@@ -10,3 +16,5 @@ export default {
 		}),
 	],
 };
+
+export default config;
