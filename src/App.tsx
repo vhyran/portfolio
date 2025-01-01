@@ -1,12 +1,10 @@
-import { Button, Flex, Text } from '@radix-ui/themes';
-
 function Main() {
 	return (
 		<>
-			<Flex direction="column" gap="2">
-				<Text>Hello from Radix Themes :)</Text>
-				<Button>Let's go</Button>
-			</Flex>
+			<div className="container mx-auto p-4 text-text text-center">
+				<h1>Welcome to My Portfolio</h1>
+				<p>This is an example template for my portfolio website.</p>
+			</div>
 		</>
 	);
 }
