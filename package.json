@@ -12,7 +12,7 @@
 		"preview": "bunx --bun vite preview"
 	},
 	"dependencies": {
-		"@headlessui/react": "^2.2.0",
+		"@radix-ui/themes": "^3.1.6",
 		"motion": "^11.15.0",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1"
