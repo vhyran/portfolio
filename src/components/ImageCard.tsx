@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { useReducedMotion } from 'motion/react';
+import { motion, useReducedMotion } from 'framer-motion';
 
 interface Props {
 	images: string;

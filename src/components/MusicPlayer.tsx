@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import type React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { FaPause, FaPlay } from 'react-icons/fa';
@@ -38,24 +39,24 @@ const MusicPlayer: React.FC = () => {
 	});
 
 	return (
-		<div
+		<motion.div
 			className="flex flex-col items-center justify-center bg-base p-6 rounded-lg shadow-lg"
 			style={{ maxWidth: '300px', margin: '0 auto' }}
 		>
 			<audio ref={audioRef} src={track} loop>
 				<track kind="captions" srcLang="en" label="English" />
 			</audio>
-			<button
+			<motion.button
 				type="button"
 				onClick={togglePlayPause}
 				className="text-text text-2xl mb-4 pl-4"
 			>
 				{isPlaying ? <FaPause /> : <FaPlay />}
-			</button>
-			<div className="w-full bg-text h-5">
+			</motion.button>
+			<motion.div className="w-full bg-text h-5">
 				<div className="bg-mauve h-5" style={{ width: `${progress}%` }} />
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 };
 
