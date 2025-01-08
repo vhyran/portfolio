@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 
 function Navbar() {
+	const [location] = useLocation();
+
 	return (
 		<motion.nav className="navbar fixed top-0 left-1/2 transform -translate-x-1/2 px-6 mx-4 p-4 m-2 bg-gray-100 dark:bg-gray-800 z-50">
 			<ul className="flex space-x-4">
-				{window.location.pathname !== '/' && (
+				{location !== '/' && (
 					<li>
 						<Link
 							to="/"
@@ -15,7 +17,7 @@ function Navbar() {
 						</Link>
 					</li>
 				)}
-				{window.location.pathname !== '/about' && (
+				{location !== '/about' && (
 					<li>
 						<Link
 							to="/about"
@@ -25,7 +27,7 @@ function Navbar() {
 						</Link>
 					</li>
 				)}
-				{window.location.pathname !== '/blogs' && (
+				{location !== '/blogs' && (
 					<li>
 						<Link
 							to="/blogs"
@@ -35,7 +37,7 @@ function Navbar() {
 						</Link>
 					</li>
 				)}
-				{window.location.pathname !== '/contact' && (
+				{location !== '/contact' && (
 					<li>
 						<Link
 							to="/contact"
@@ -45,7 +47,7 @@ function Navbar() {
 						</Link>
 					</li>
 				)}
-				{window.location.pathname !== '/projects' && (
+				{location !== '/projects' && (
 					<li>
 						<Link
 							to="/projects"
