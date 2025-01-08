@@ -13,7 +13,7 @@ import Projects from './pages/Projects.tsx';
 // biome-ignore lint/style/noNonNullAssertion: <explanation>
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
-		<Router>
+		<Router base="/">
 			<Navbar />
 			<Route path="/" component={Home} />
 			<Route path="/about" component={About} />
