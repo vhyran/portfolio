@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const Projects = () => {
+export default function Projects() {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -12,6 +12,4 @@ const Projects = () => {
 			</h1>
 		</motion.div>
 	);
-};
-
-export default Projects;
+}

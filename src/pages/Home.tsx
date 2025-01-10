@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import Button from '../components/Button';
 import MusicPlayer from '../components/MusicPlayer';
 
-const Home = () => {
+export default function Home() {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -22,6 +22,4 @@ const Home = () => {
 			</div>
 		</motion.div>
 	);
-};
-
-export default Home;
+}

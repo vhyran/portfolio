@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const Contact = () => {
+export default function Contact() {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -12,6 +12,4 @@ const Contact = () => {
 			</h1>
 		</motion.div>
 	);
-};
-
-export default Contact;
+}
