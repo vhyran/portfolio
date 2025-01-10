@@ -50,11 +50,11 @@ const MusicPlayer: React.FC = () => {
 				<motion.button
 					type="button"
 					onClick={togglePlayPause}
-					className="text-white text-2xl mr-4"
+					className="text-text text-2xl mr-4"
 				>
 					{isPlaying ? <FaPause /> : <FaPlay />}
 				</motion.button>
-				<motion.div className="flex-1 bg-white h-5">
+				<motion.div className="flex-1 bg-text h-5">
 					<div className="bg-blue h-5" style={{ width: `${progress}%` }} />
 				</motion.div>
 			</div>
