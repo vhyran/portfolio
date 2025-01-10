@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import type React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { FaPause, FaPlay } from 'react-icons/fa';
-import track from '/music/track.mp3';
+import track from '../assets/music/track.mp3';
 
 const MusicPlayer: React.FC = () => {
 	const [isPlaying, setIsPlaying] = useState(false);
