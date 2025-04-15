@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-import Button from '../components/Button';
-import MusicPlayer from '../components/MusicPlayer';
 
 export default function Home() {
 	return (
@@ -13,12 +11,6 @@ export default function Home() {
 				Home
 			</h1>
 			<div className="">
-				<div className="absolute bottom-0 left-0 p-2 m-2">
-					<MusicPlayer />
-				</div>
-				<div className="absolute bottom-0 right-0 p-2 m-2">
-					<Button text="About" redirect="/about" />
-				</div>
 			</div>
 		</motion.div>
 	);
