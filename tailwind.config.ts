@@ -8,13 +8,14 @@ const config: Config = {
 			fontFamily: {
 				jetbrains: ['JetBrains Mono', 'monospace'],
 			},
+			colors: {
+        void: '#0a0a0a',
+        sapphire: '#1e40af',
+        pearl: '#e2e8f0',
+        amber: '#f59e0b',
+      }
 		},
-	},
-	plugins: [
-		require('@catppuccin/tailwindcss')({
-			defaultFlavour: 'mocha',
-		}),
-	],
+	}
 };
 
 export default config;
