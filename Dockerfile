@@ -1,4 +1,4 @@
-FROM oven/bun:alpine
+FROM oven/bun:alpine AS build
 WORKDIR /app
 COPY package.json bun.lockb ./
 RUN bun install
